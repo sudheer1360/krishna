@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AR With IOT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">AR With IOT</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/model">ADXL Analysis</a></li>
+        <li><a href="/model1">BMP180 Analysis</a></li>
+        <li><a href="/model2">LDR and IR Analysis</a></li>
+        <!-- <li><a href="/model3">Rainfall Analysis</a></li>
+        <li><a href="/model4">Light Analysis</a></li>
+        <li><a href="/logout">Logout</a></li> -->
+      </ul>
+    </div>
+    </nav>
+    <br/><br/>
+    <div class="row">
+        <div class="container col-sm-2"></div>
+        <div class="container col-sm-4">
+            <center><h3>ADXL Sensory Feed</h3></center>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444394/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444394/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444394/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+          </div>
+        <div class="container col-sm-4">
+            <center><h3>BMP180 Sensory Feed</h3></center>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444405/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444405/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+          </div>
+    </div>
+    <div class="row">
+        <div class="container col-sm-2"></div>
+        <div class="container col-sm-4">
+            <center><h3>IR and LDR Sensory Feed</h3></center>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444409/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2444409/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+          </div>
+        <!-- <div class="container col-sm-4">
+            <center><h3>Rainfall Sensory Feed</h3></center>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2454779/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div> -->
+    </div>
+    <!-- <div class="row">
+        <div class="container col-sm-2"></div>
+        <div class="container col-sm-4">
+            <center><h3>Light Sensory Feed</h3></center>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2454779/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+    </div> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
